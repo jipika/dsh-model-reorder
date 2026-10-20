@@ -1,0 +1,25 @@
+{
+  "name": "dsh-model-reorder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "在「设置 → 模型」的 provider 卡片里给每个模型行加一个拖拽手柄，按住拖动即可调整模型顺序（写回 settings 的 models 数组，模型选择器顺序随之改变）。",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
